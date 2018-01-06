@@ -2,7 +2,11 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
+<<<<<<< HEAD
     "baseUrl": "/src",
+=======
+    "baseUrl": "./",
+>>>>>>> ab1e760... :sparkle: fresh cli setup
     "module": "es2015",
     "types": []
   },
