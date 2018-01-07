@@ -9,12 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-<<<<<<< HEAD
         "favicon.ico",
         "mangas"
-=======
-        "favicon.ico"
->>>>>>> ab1e760... :sparkle: fresh cli setup
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -24,12 +20,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-<<<<<<< HEAD
-
         "app/stylesheets-css/styles.body.css"
-=======
-        "styles.css"
->>>>>>> ab1e760... :sparkle: fresh cli setup
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
