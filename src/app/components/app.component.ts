@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {routeAnimation} from "../animations/animation";
+import {routeAnimation} from "../animations/routeAnimation";
 
 @Component({
   moduleId: module.id,

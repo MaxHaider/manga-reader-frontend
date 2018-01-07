@@ -7,6 +7,7 @@ import { StringResult } from '../data/dto/string-result';
 import { Router } from '@angular/router';
 import { ReadingService } from '../data/dao/reading.service';
 import { MangaService } from '../data/dao/manga.service';
+import {routeAnimation} from "../animations/routeAnimation";
 
 @Component({
     moduleId: module.id,

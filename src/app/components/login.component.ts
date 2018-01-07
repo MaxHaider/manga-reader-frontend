@@ -4,7 +4,7 @@ import { User } from '../data/dto/user';
 import { Router } from '@angular/router';
 import { Result } from '../data/dto/result';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {routeAnimation} from "../animations/animation";
+import {routeAnimation} from "../animations/routeAnimation";
 
 @Component({
     moduleId: module.id,

@@ -9,7 +9,7 @@ import { StringResult } from '../data/dto/string-result';
 import { Paths } from '../data/dto/paths'; 
 import { Router } from '@angular/router';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {routeAnimation} from "../animations/animation";
+import {routeAnimation} from "../animations/routeAnimation";
 
 @Component({
     moduleId: module.id,
