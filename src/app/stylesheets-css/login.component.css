@@ -1,0 +1,58 @@
+#login-form {
+  width: 360px;
+  font-family: "Roboto";
+  position: relative;
+  background: #424242;
+  text-align: center;
+  margin: 15% auto;
+  height: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+#login-header {
+  background: #e91e63;
+  font-size: 30px;
+  height: 65px;
+  line-height: 65px; }
+  #login-header p {
+    color: white; }
+
+#login-content {
+  text-align: center;
+  font-family: "Roboto";
+  position: relative;
+  padding: 0 45px 0 45px; }
+  #login-content input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin-top: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px; }
+  #login-content button {
+    position: relative;
+    color: white;
+    background: #e91e63;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+.input-with-icon {
+  display: flex;
+  flex-direction: row; }
+  .input-with-icon span {
+    color: white;
+    background: #e91e63;
+    padding: 10px;
+    margin-top: 15px; }
+
+/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,22 @@
+<div class="topnav-selection">
+    <div >
+        <a class="topnav-selection-a">MANGA</a>
+        <a class="topnav-selection-button topnav-selection-a" (click)="Logout()" >&#x2718;</a>
+        <a id="topnav-username">{{currentUser.username}}</a>
+    </div>
+
+</div>
+<div>
+    <div *ngFor="let manga of mangas">
+        <div class="SelectionListItem" (click)="changeMenuStateItem(manga.name)">
+            <div class="SelectionListContent">
+                <img src="mangas/covers/{{manga.name}}.jpg" class="SelectionListCover"/>
+            </div>
+            <div class="SelectionListItem-menu" id="{{manga.name}}">
+                <a class="SelectionListItem-menu-title"> {{manga.name}}</a>
+                <a class="SelectionListItem-menu-content">{{manga.numVolumes}} Volumes</a>
+                <footer class="SelectionListItem-menu-button" (click)="read(manga.name)">Read</footer>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+$primary-color:#e91e63; 
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$header-font-color:white; 
+$font:'Roboto';
+
+body{
+  background-color: $theme-color-2;
+  margin:0;
+  overflow-x:hidden; 
+}

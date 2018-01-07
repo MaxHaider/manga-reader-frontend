@@ -1,0 +1,405 @@
+.jojo {
+  color: #e91e63;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 5%; }
+
+.currpath:hover {
+  background: transparent; }
+
+.goldenwind {
+  color: #ffb300;
+  font-family: "Roboto", sans-serif;
+  font-size: 250%; }
+
+.heading {
+  margin: auto;
+  margin-top: 1%;
+  text-align: center;
+  padding: 5px;
+  position: relative; }
+
+.menu-font {
+  color: #e91e63;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 200%;
+  font-weight: bold;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  vertical-align: center; }
+
+.desc {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%; }
+
+main {
+  background-color: #303030;
+  margin: 0; }
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transition: 0.3s;
+  height: auto; }
+
+.form {
+  z-index: 1;
+  background: #424242;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  transition: 0.5;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  top: 50%; }
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: 0.5s; }
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #e91e63;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+  cursor: pointer; }
+
+.form button:hover, .form button:active, .form button:focus {
+  cursor: pointer;
+  background-color: #FF3279; }
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px; }
+
+.form .message a {
+  color: #e91e63;
+  text-decoration: none; }
+
+.form .register-form {
+  display: none; }
+
+.main-form {
+  position: relative;
+  z-index: 1;
+  background: #424242;
+  margin: auto;
+  margin-top: 2%;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  height: 100%; }
+
+.input-text {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  font-size: 100%;
+  text-decoration: none;
+  border-color: transparent;
+  width: 10%;
+  height: 50px; }
+
+.menu-button {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 100%;
+  font-weight: 700;
+  background: transparent;
+  text-decoration: none;
+  border-color: transparent;
+  width: 5%;
+  padding: 15px;
+  cursor: pointer; }
+
+.back-button {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 90%;
+  background: #e91e62;
+  text-decoration: none;
+  border-color: transparent;
+  width: 5%;
+  padding: 15px; }
+
+.back-button:hover {
+  color: #f5206a;
+  text-decoration: none;
+  background: #ffffff; }
+
+/* The side navigation menu */
+.sidenav {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  min-height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #f5206a;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus {
+  color: white; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.sidenav .backbtn {
+  position: absolute;
+  top: 0;
+  right: 75px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; }
+
+  .topnav-selection-menu {
+    padding-top: 15px; }
+
+  .topnav-selection-menu a {
+    font-size: 18px; } }
+/* Add a black background color to the top navigation */
+.topnav {
+  background: #212121;
+  overflow: hidden; }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: "Roboto", sans-serif;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px; }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background: #e91e63;
+  color: white; }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  background: #e91e63; }
+
+.topnav-selection {
+  background-color: #212121;
+  overflow-x: hidden;
+  z-index: 1;
+  margin: 0, auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: 0.5s;
+  width: auto;
+  font-size: 17px;
+  line-height: 1.2; }
+
+.topnav-selection-a {
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  color: #f2f2f2;
+  height: 100%;
+  float: left;
+  display: block;
+  font-size-adjust: 0.38;
+  background: #e91e63;
+  cursor: inherit; }
+
+#topnav-username {
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  height: 100%;
+  float: right;
+  display: block;
+  font-size-adjust: 0.38;
+  color: #e91e63; }
+
+.topnav-selection-button {
+  transition: 0.5s; }
+
+.topnav-selection-button:hover {
+  cursor: pointer;
+  background-color: #FF3279; }
+
+.topnav-selection-menu {
+  background: #e91e63;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 1;
+  margin: 0, auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: 0.5s;
+  width: 0px;
+  font-size: 17px;
+  line-height: 1.2;
+  display: inline-block; }
+
+.topnav-selection-menu a {
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #f2f2f2;
+  height: 100%;
+  display: block;
+  font-size-adjust: 0.38;
+  background: #e91e63;
+  left: 0; }
+
+.SelectionListItem {
+  z-index: 1;
+  background: #424242;
+  color: white;
+  margin: 2%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  font-family: "Roboto", sans-serif;
+  font-size: 175%;
+  font-weight: bold;
+  display: flex;
+  float: left;
+  transition: 0.5s;
+  width: auto;
+  height: 300px; }
+
+.SelectionListContent {
+  float: left; }
+
+.SelectionListContent a {
+  float: left;
+  background: #e91e63; }
+
+.SelectionListItem-menu {
+  height: 100%;
+  float: left;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 0px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.SelectionListItem-menu-title {
+  text-align: center;
+  flex: 1 1 auto;
+  order: 1;
+  height: auto;
+  font-size: 23px; }
+
+.SelectionListItem-menu-content {
+  text-align: center;
+  flex: 1 1 auto;
+  order: 1;
+  font-size: 17px;
+  margin-top: -80px; }
+
+.SelectionListItem-menu-button {
+  text-align: center;
+  vertical-align: center;
+  position: relative;
+  flex: 1;
+  order: 1;
+  padding: 10%;
+  margin: 10%;
+  cursor: pointer;
+  font-size: 17px;
+  background: #e91e63;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: 0.5s; }
+
+.SelectionListItem-menu-button:hover {
+  background-color: #FF3279; }
+
+.SelectionListItem:hover {
+  background: #525252;
+  transform: scale(1.05); }
+
+.SelectionListCover {
+  height: 300px;
+  width: 200px;
+  margin: 0 auto; }
+
+.unsuccessful-login-p {
+  transition: height 0.3s ease-in-out;
+  height: 0px;
+  color: red;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
+  align-content: center;
+  vertical-align: center;
+  width: 100%;
+  padding: 0px; }
+
+.main-image {
+  width: auto; }
+
+/*# sourceMappingURL=styles.css.map */

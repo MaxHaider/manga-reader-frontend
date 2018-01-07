@@ -1,0 +1,38 @@
+<div class="topnav-selection">
+    <div>
+        <a class="topnav-selection-a">Manga-Reader</a>
+        <a class="topnav-selection-button topnav-selection-a" id="topnav-selection-button" (click)="changeMenuState()">&#9776;</a>
+        <a class="topnav-selection-button topnav-selection-a" (click)="BackToSelection()" >❤</a>
+        <a class="topnav-selection-button topnav-selection-a" (click)="prevPage()" >◄</a>
+        <a class="topnav-selection-button topnav-selection-a" (click)="nextPage()" >►</a>
+        <a id="topnav-username">{{url}}</a>
+    </div>
+
+</div>
+<div class="main-form">
+    <div class="sidenav" id="sidenav">
+            <a class="closebtn" (click)="changeMenuState()">&times;</a>
+            <a class="backbtn" (click)="resetDir()">↻</a>
+            <div *ngFor="let dir of dirs">
+                <a (click)="nextDir(dir)">{{dir}}</a>
+            </div>
+    </div>
+    <img class="main-image" src="{{url}}" (click)="nextPage()" />
+    <div class="cssload-bell" id="loadingCircle">
+        <div class="cssload-circle">
+          <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+          <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+          <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+          <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+          <div class="cssload-inner"></div>
+        </div>
+      </div>
+</div>

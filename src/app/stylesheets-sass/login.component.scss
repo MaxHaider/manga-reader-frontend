@@ -1,0 +1,89 @@
+//Variables
+$primary-color:#e91e63; 
+$secondary-color:#1AC673;
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$header-font-color:white; 
+$font:'Roboto';
+
+//Mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+//Actual Code
+
+
+#login-form {
+    width: 360px;
+    font-family: $font;
+    position: relative;
+    background: $theme-color-3;
+    text-align: center;
+    margin:15% auto;
+    height: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#login-header {
+    background: $primary-color;
+    font-size: 30px;
+    height: 65px;
+    line-height: 65px;
+    p{
+        color: $header-font-color;
+    }
+}
+
+#login-content {
+    text-align: center;
+    font-family: $font;
+    position: relative;
+    padding: 0 45px 0 45px;
+
+        
+    input{
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin-top: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    button{
+        position: relative;
+        color: white;
+        background: $primary-color;
+        width: 50px;
+        height: 50px;
+        top:25px;
+        border: 0;
+        font-size: 15px;
+        cursor: pointer;  
+        @include border-radius(50%);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+ 
+    }
+}
+
+.input-with-icon{
+    display: flex;
+    flex-direction: row;
+    
+    span{
+        color:white;
+        background: $primary-color;
+        padding: 10px;
+        margin-top: 15px;
+    }
+}
+

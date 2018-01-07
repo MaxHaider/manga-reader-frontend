@@ -1,0 +1,33 @@
+<!-- <div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="Username" #username/>
+      <input type="password" placeholder="Password" #password/>
+      <div id="unsuccessful-login-p" class="unsuccessful-login-p">
+        <a>Login war nicht erfolgreich</a>
+      </div>
+      <button (click)="login(username.value, password.value)">Login</button>
+    </form>
+  </div>
+</div>     -->
+
+
+<form id="login-form">
+  <section id="login-header">
+      <p>Login</p>
+  </section>
+  <section id="login-content">
+    <div class="input-with-icon">
+      <span><i class="material-icons">perm_identity</i></span>
+      <input type="text" placeholder="Username" #username/>
+    </div>
+    
+    <div class="input-with-icon">
+        <span><i class="material-icons">lock_outline</i></span>
+        <input type="password" placeholder="Password" #password/>
+    </div>
+    <button (click)="login(username.value, password.value)">
+        <i class="material-icons">send</i>
+    </button>
+  </section>
+</form>
