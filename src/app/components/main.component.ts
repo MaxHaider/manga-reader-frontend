@@ -13,14 +13,17 @@ import {routeAnimation} from "../animations/routeAnimation";
     moduleId: module.id,
     selector: 'main',
     templateUrl: './templates/main.component.html',
-    styleUrls:['../stylesheets-css/styles.css']
+    styleUrls:['../stylesheets-css/main.component.css'],
+    animations:[routeAnimation]
 })
 export class MainComponent implements OnInit{ 
     currentUser:string;
     currentManga:string;
     url:string;
+    formattedUrl:string;
     dirs:string[];
     currPath:string;
+    loading:boolean;
 
 
     constructor(
@@ -31,14 +34,14 @@ export class MainComponent implements OnInit{
         ) {}
 
     ngOnInit():void{
-        this.setLoading(true);
+        this.loading = false;
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         this.currentManga = localStorage.getItem('currentManga');
         this.currPath = "mangas\\" + this.currentManga;
         this.readingService.getCurrentPage(this.currentUser,this.currentManga)
             .then(url => this.generateUrl(url));
 
-        document.getElementById("sidenav").style.width = "0px";
+        //document.getElementById("sidenav").style.width = "0px";
 
         this.mangaService.getDir(this.currPath)
             .then(dirs => this.dirs = dirs);
@@ -47,7 +50,7 @@ export class MainComponent implements OnInit{
 
 
     nextPage(){
-        this.setLoading(true);
+        this.loading = true;
         this.readingService.getNextPage(this.currentUser,this.currentManga)
             .then(url => this.generateUrl(url));
 
@@ -61,19 +64,10 @@ export class MainComponent implements OnInit{
 
     generateUrl(url:String){
         this.url = url.split("\"")[1];
-        this.setLoading(false);
+        this.formattedUrl = "Volume " + url.split("\\\\")[2] + " " + url.split("\\\\")[3] + " Page " + url.split("\\\\")[4].split("_")[3].split(".")[0];
+        this.loading = false;
     }
 
-    setLoading(set:boolean){
-        if(set){
-            this.url = "";
-            document.getElementById("loadingCircle").style.visibility = "visible";
-
-        } else{
-            document.getElementById("loadingCircle").style.visibility = "hidden";
-
-        }
-    }
 
     nextDir(dir:String){
         this.currPath = this.currPath + "\\" + dir;

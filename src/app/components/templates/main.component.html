@@ -1,38 +1,19 @@
-<div class="topnav-selection">
-    <div>
-        <a class="topnav-selection-a">Manga-Reader</a>
-        <a class="topnav-selection-button topnav-selection-a" id="topnav-selection-button" (click)="changeMenuState()">&#9776;</a>
-        <a class="topnav-selection-button topnav-selection-a" (click)="BackToSelection()" >❤</a>
-        <a class="topnav-selection-button topnav-selection-a" (click)="prevPage()" >◄</a>
-        <a class="topnav-selection-button topnav-selection-a" (click)="nextPage()" >►</a>
-        <a id="topnav-username">{{url}}</a>
-    </div>
-
-</div>
+<form class="topnav">
+    <h1>{{currentManga}}</h1>
+    <a (click)="changeMenuState()"><i class="material-icons">menu</i></a>
+    <a (click)="BackToSelection()" ><i class="material-icons">home</i></a>
+    <a (click)="prevPage()" ><i class="material-icons">chevron_left</i></a>
+    <a class="topnav-selection-button topnav-selection-a" (click)="nextPage()" ><i class="material-icons">chevron_right</i></a>
+    
+</form>
 <div class="main-form">
-    <div class="sidenav" id="sidenav">
+    <!-- <div class="sidenav" id="sidenav">
             <a class="closebtn" (click)="changeMenuState()">&times;</a>
-            <a class="backbtn" (click)="resetDir()">↻</a>
+            <a class="backbtn" (click)="resetDir()"><i class="material-icons">undo</i></a>
             <div *ngFor="let dir of dirs">
                 <a (click)="nextDir(dir)">{{dir}}</a>
             </div>
-    </div>
+    </div> -->
+    <a>{{formattedUrl}}</a>
     <img class="main-image" src="{{url}}" (click)="nextPage()" />
-    <div class="cssload-bell" id="loadingCircle">
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-      </div>
 </div>
