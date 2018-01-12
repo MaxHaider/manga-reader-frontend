@@ -1,0 +1,34 @@
+$primary-color:#e91e63; 
+$secondary-color:#1AC673;
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$main-font-color:white; 
+$font:'Roboto';
+$heading-font:'Roboto Condensed';
+
+@import 'topnav';
+
+.main-form {
+    position: relative;
+    z-index: 1;
+    background: $theme-color-3;
+    margin:auto;
+    margin-top: 2%;
+    width: 96%;
+    padding: 2%;
+    text-align: center;
+    height: 100%;
+
+    img{
+        width:100%;
+        height: auto;
+    }
+
+    a{
+        font-family: $font;
+        color:$main-font-color;
+        
+    }
+}

@@ -5,7 +5,7 @@ $theme-color-0:#000000;
 $theme-color-1:#212121; 
 $theme-color-2:#303030; 
 $theme-color-3:#424242; 
-$header-font-color:white; 
+$main-font-color:white; 
 $font:'Roboto';
 
 //Mixins
@@ -18,8 +18,6 @@ $font:'Roboto';
 
 
 //Actual Code
-
-
 #login-form {
     width: 360px;
     font-family: $font;
@@ -37,7 +35,7 @@ $font:'Roboto';
     height: 65px;
     line-height: 65px;
     p{
-        color: $header-font-color;
+        color: $main-font-color;
     }
 }
 
@@ -61,7 +59,7 @@ $font:'Roboto';
 
     button{
         position: relative;
-        color: white;
+        color: $main-font-color;
         background: $primary-color;
         width: 50px;
         height: 50px;
@@ -80,7 +78,7 @@ $font:'Roboto';
     flex-direction: row;
     
     span{
-        color:white;
+        color:$main-font-color;
         background: $primary-color;
         padding: 10px;
         margin-top: 15px;

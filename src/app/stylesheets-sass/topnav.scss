@@ -1,0 +1,76 @@
+$primary-color:#e91e63; 
+$secondary-color:#1AC673;
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$main-font-color:white; 
+$font:'Roboto';
+$heading-font:'Roboto Condensed';
+
+%topnav-a{
+    float: left;
+    display: block;
+    color: $main-font-color;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    transition:0.5s;
+}
+
+.topnav {
+    font-family: $font;
+    background-color: $theme-color-1;
+    overflow-x: hidden;
+    z-index: 1;
+    margin:0, auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    width:auto;
+    line-height: 1.2;
+
+    a{
+        @extend %topnav-a;
+        :hover{
+            cursor:pointer;
+            color: $primary-color;
+        }
+    }
+    h1{
+        @extend %topnav-a;
+        font-family: $heading-font;
+        font-size: 20px;
+        margin: 0px;
+        color: $main-font-color;
+        background-color: $primary-color;
+    }
+}
+
+
+  
+  /*
+  .topnav-selection-menu{
+    background: $primary-color;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+    margin:0, auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    transition:0.5s;
+    width:0px;
+    font-size: 17px;
+    line-height: 1.2;
+    display: inline-block;
+  }
+  .topnav-selection-menu a{
+    padding:15px;
+    font-family: "Roboto", sans-serif;
+    color: $main-font-color;
+    height:100%;
+    display:block;
+    font-size-adjust: 0.38;
+    background: $primary-color;
+    left:0;
+  }
+  */
