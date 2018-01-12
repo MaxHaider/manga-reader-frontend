@@ -10,7 +10,8 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "mangas"
+        "mangas\\Golden Wind\\01\\Chapter 445\\va_color_v01_061.jpg",
+        "mangas\\covers"
       ],
       "index": "index.html",
       "main": "main.ts",
