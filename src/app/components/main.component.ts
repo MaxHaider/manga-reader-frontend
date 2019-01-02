@@ -13,7 +13,7 @@ import {routeAnimation} from "../animations/routeAnimation";
     moduleId: module.id,
     selector: 'main',
     templateUrl: './templates/main.component.html',
-    styleUrls:['../stylesheets-css/main.component.css'],
+    styles:['../styles/main.component.scss'],
     animations:[routeAnimation]
 })
 export class MainComponent implements OnInit{ 

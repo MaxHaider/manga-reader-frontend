@@ -1,0 +1,99 @@
+$primary-color:#e91e63; 
+$secondary-color:#1AC673;
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$main-font-color:white; 
+$font:'Roboto';
+$heading-font:'Roboto Condensed';
+
+@import 'topnav';
+
+.SelectionListItem{
+    z-index: 1;
+    background: #424242;
+    color: white;
+    margin:2%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-family: "Roboto", sans-serif;
+    font-size: 175%;
+    font-weight: bold;
+    display: flex;
+    float:left;
+    transition: 0.5s; 
+    width:auto;
+    height:300px;
+  }
+  .SelectionListContent{
+    float:left;
+  }
+  
+  .SelectionListContent a{
+    float:left;
+    background: $primary-color;
+  }
+  
+  
+  .SelectionListItem-menu{
+    height:100%;
+    float:left; 
+    overflow-x: hidden;
+    transition: 0.5s; 
+    width:0px;
+    white-space:nowrap;
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .SelectionListItem-menu-title{
+    text-align: center;
+    flex:1 1 auto;
+    order:1;
+    height: auto;
+    font-size:23px;
+  }
+  
+  .SelectionListItem-menu-content{
+    text-align: center;
+    flex:1 1 auto;
+    order:1;
+    font-size:17px;
+    margin-top:-80px;
+  }
+  
+  
+  .SelectionListItem-menu-button{
+    text-align: center;
+    vertical-align: center;
+    position:relative;
+    flex:1;
+    order:1;
+    padding: 10%;
+    margin:10%;
+    cursor: pointer;
+    font-size:17px;
+    background: $primary-color;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    transition:0.5s;
+  }
+  
+  
+  .SelectionListItem-menu-button:hover{
+    background-color: #FF3279;
+  }
+  
+  .SelectionListItem:hover{
+    background: #525252;
+    transform: scale(1.05); 
+  }
+  
+  .SelectionListCover{
+    height:300px;
+    width:200px;
+    margin: 0 auto;
+  }

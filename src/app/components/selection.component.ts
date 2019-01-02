@@ -15,7 +15,7 @@ import {routeAnimation} from "../animations/routeAnimation";
     moduleId: module.id,
     selector: 'selection',
     templateUrl: './templates/selection.component.html',
-    styleUrls:['../stylesheets-css/styles.css'],
+    styles:['../styles/selection.component.scss'],
     animations:[routeAnimation]
 })
 export class SelectionComponent implements OnInit{ 

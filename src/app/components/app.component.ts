@@ -6,7 +6,7 @@ import {routeAnimation} from "../animations/routeAnimation";
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: './templates/app.component.html',
-  styleUrls:['../stylesheets-css/styles.css'],
+  //styles:['../styles/styles.scss'],
   animations:[routeAnimation]
 })
 export class AppComponent  { 

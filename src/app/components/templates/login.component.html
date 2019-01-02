@@ -12,6 +12,11 @@
         <span><i class="material-icons">lock_outline</i></span>
         <input type="password" placeholder="Password" #password/>
     </div>
+
+    <div id="unsuccessful-login" class="unsuccessful-login">
+      <p>Wrong Credentials!</p>
+    </div>
+
     <button (click)="login(username.value, password.value)">
         <i class="material-icons">send</i>
     </button>

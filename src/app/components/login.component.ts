@@ -10,9 +10,7 @@ import {routeAnimation} from "../animations/routeAnimation";
     moduleId: module.id,
     selector: 'login',
     templateUrl: './templates/login.component.html',
-    styleUrls:[
-        '../stylesheets-css/login.component.css'
-    ],
+    styles:['../styles/login.component.scss'],
     animations:[routeAnimation]
 })
 export class LoginComponent implements OnInit{ 
@@ -40,7 +38,7 @@ export class LoginComponent implements OnInit{
 
     async showWrongPassword(set:boolean){
         if(set){
-            document.getElementById("unsuccessful-login-p").style.height = "30px";
+            document.getElementById("unsuccessful-login").style.height = "30px";
             setTimeout(() => 
             {
                 this.showWrongPassword(false);
@@ -49,7 +47,7 @@ export class LoginComponent implements OnInit{
 
 
         } else{
-            document.getElementById("unsuccessful-login-p").style.height = "0px";
+            document.getElementById("unsuccessful-login").style.height = "0px";
 
         }
     }
