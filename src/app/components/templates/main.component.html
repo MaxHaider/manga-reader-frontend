@@ -1,19 +1,23 @@
-<form class="topnav">
-    <h1>{{currentManga}}</h1>
-    <a (click)="changeMenuState()"><i class="material-icons">menu</i></a>
-    <a (click)="BackToSelection()" ><i class="material-icons">home</i></a>
-    <a (click)="prevPage()" ><i class="material-icons">chevron_left</i></a>
-    <a class="topnav-selection-button topnav-selection-a" (click)="nextPage()" ><i class="material-icons">chevron_right</i></a>
-    
-</form>
-<div class="main-form">
-    <!-- <div class="sidenav" id="sidenav">
-            <a class="closebtn" (click)="changeMenuState()">&times;</a>
-            <a class="backbtn" (click)="resetDir()"><i class="material-icons">undo</i></a>
-            <div *ngFor="let dir of dirs">
-                <a (click)="nextDir(dir)">{{dir}}</a>
-            </div>
-    </div> -->
-    <a>{{formattedUrl}}</a>
-    <img class="main-image" src="{{url}}" (click)="nextPage()" />
-</div>
+<mat-sidenav-container>
+    <mat-sidenav #Dirnav mode="over" class="sidenav">
+        <h1 class="">Change Page</h1>
+        <a class="backbtn" (click)="resetDir()"><i class="material-icons">undo</i></a>
+        <mat-nav-list *ngFor="let dir of dirs">
+            <a (click)="nextDir(dir)">{{dir}}</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class="topnav">
+            <span><h1>{{currentManga}}</h1></span>
+            <span><a (click)="Dirnav.toggle()"><i class="material-icons">menu</i></a></span>
+            <span><a (click)="BackToSelection()"><i class="material-icons">home</i></a></span>
+            <span><a (click)="prevPage()"><i class="material-icons">chevron_left</i></a></span>
+            <span><a (click)="nextPage()"><i class="material-icons">chevron_right</i></a></span>
+            <span class="fill-remaining-space"></span>
+            <span ><a>{{formattedUrl}}</a></span>
+        </mat-toolbar>
+        <div class="main-form">
+            <img class="main-image" src="{{url}}" (click)="nextPage()" />
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

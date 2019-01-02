@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { ReadingService } from '../data/dao/reading.service';
 import { MangaService } from '../data/dao/manga.service';
 import {routeAnimation} from "../animations/routeAnimation";
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @Component({
     moduleId: module.id,
@@ -92,7 +93,7 @@ export class MainComponent implements OnInit{
         this.router.navigate(['/selection']);
     }
 
-
+/*
     changeMenuState(){
         if(document.getElementById("sidenav").style.width != "0px"){
             document.getElementById("sidenav").style.width = "0px";
@@ -101,5 +102,6 @@ export class MainComponent implements OnInit{
         }
 
     }
+    */
 }
 

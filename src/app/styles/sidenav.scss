@@ -1,0 +1,48 @@
+$primary-color:#e91e63; 
+$focused-color:#e83572;
+$secondary-color:#1AC673;
+$theme-color-0:#000000; 
+$theme-color-1:#212121; 
+$theme-color-2:#303030; 
+$theme-color-3:#424242; 
+$main-font-color:white; 
+$font:'Roboto';
+$heading-font:'Roboto Condensed';
+
+.mat-sidenav-container{
+    background: transparent;
+}
+
+.sidenav{
+    width: 300px;
+    background-color: $primary-color;
+    color: $main-font-color;
+    font-family: $font;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        padding: 4px 4px 4px 4px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+        cursor: pointer;
+    }
+
+    h1{
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        cursor: context-menu;
+    }
+    .backbtn {
+        position: absolute;
+        top: 0;
+        right: 75px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+}

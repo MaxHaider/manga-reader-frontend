@@ -9,7 +9,6 @@ $font:'Roboto';
 $heading-font:'Roboto Condensed';
 
 %topnav-a{
-    float: left;
     display: block;
     color: $main-font-color;
     text-align: center;
@@ -26,11 +25,11 @@ $heading-font:'Roboto Condensed';
     z-index: 1;
     margin:0, auto;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    width:auto;
-    line-height: 1.2;
-
+    color: $main-font-color;
     a{
-        @extend %topnav-a;
+        margin: 8px;
+        vertical-align: middle;
+        display: inline;
         :hover{
             cursor:pointer;
             color: $primary-color;
@@ -38,16 +37,19 @@ $heading-font:'Roboto Condensed';
     }
     h1{
         @extend %topnav-a;
+        float:left;
         font-family: $heading-font;
         font-size: 20px;
         margin: 0px;
-        color: $main-font-color;
-        background-color: $primary-color;
+        color: $primary-color;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-
-  
+.fill-remaining-space{
+    flex: 1 1 auto;
+}
   /*
   .topnav-selection-menu{
     background: $primary-color;

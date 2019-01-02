@@ -18,6 +18,7 @@ import { MangaService } from '../data/dao/manga.service';
 import { ReadingService } from '../data/dao/reading.service';
 import { AppConfig } from '../app.config';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatSidenavModule, MatToolbarModule, MatListModule} from '@angular/material';
 
 
 @NgModule({
@@ -26,7 +27,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ],
   declarations: [ 
     

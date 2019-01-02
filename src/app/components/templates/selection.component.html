@@ -1,16 +1,25 @@
-<div class="topnav">
-    <div >
-        <h1 >MANGA</h1>
-        <a (click)="Logout()" >&#x2718;</a>
-        <a class="topnav-user-button">{{currentUser.username}}</a>
-    </div>
+<!--
+<mat-sidenav-container>
+    <mat-sidenav #Usernav class="sidenav" mode="over" position="end">
+        <h1>{{currentUser.username}}</h1>
+        <a (click)="Logout()">Logout</a>
+    </mat-sidenav>
 
-</div>
+    <mat-sidenav-content>
+-->
+<mat-toolbar class="topnav">
+        <span>
+            <h1>MANGA</h1>
+        </span>
+        <span class="fill-remaining-space"></span>
+        <span><a class="topnav-right">{{currentUser.username}}</a></span>
+        <span><a (click)="Logout()"><i class="material-icons">clear</i></a></span>
+</mat-toolbar>
 <div>
     <div *ngFor="let manga of mangas">
         <div class="SelectionListItem" (click)="changeMenuStateItem(manga.name)">
             <div class="SelectionListContent">
-                <img src="mangas/covers/{{manga.name}}.jpg" class="SelectionListCover"/>
+                <img src="mangas/covers/{{manga.name}}.jpg" class="SelectionListCover" />
             </div>
             <div class="SelectionListItem-menu" id="{{manga.name}}">
                 <a class="SelectionListItem-menu-title"> {{manga.name}}</a>
@@ -20,3 +29,7 @@
         </div>
     </div>
 </div>
+<!--
+    </mat-sidenav-content>
+</mat-sidenav-container>
+        -->

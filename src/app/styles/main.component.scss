@@ -1,3 +1,4 @@
+
 $primary-color:#e91e63; 
 $secondary-color:#1AC673;
 $theme-color-0:#000000; 
@@ -9,6 +10,17 @@ $font:'Roboto';
 $heading-font:'Roboto Condensed';
 
 @import 'topnav';
+@import 'sidenav';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 .main-form {
     position: relative;
@@ -22,7 +34,7 @@ $heading-font:'Roboto Condensed';
     height: 100%;
 
     img{
-        width:100%;
+        width:80%;
         height: auto;
     }
 
