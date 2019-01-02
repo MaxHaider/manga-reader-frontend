@@ -17,4 +17,10 @@
   </a>
 </p>
 
-##Screenshots and GIFs
+## Screenshots and GIFs
+
+
+## Authors
+[<img alt="Max Haider" src="https://avatars0.githubusercontent.com/u/22192150?s=400&v=4" width="117">](https://github.com/MaxHaider) |
+:---:
+|[Max Haider](https://github.com/MaxHaider)|
